@@ -24,12 +24,24 @@ Draw a diagram showing the dataflow through the application starting with a form
 ### Questions
 
 1. What is responsible for defining the routes of the `games` resource?
+
+
 2. What are the the responsibilities of server.js?
+The server.js is responsible for loading static files onto the browser and directing responses and requests using any router. In this case the gamesRouter.
+
+
 3. What are the responsibilities of the `gamesRouter`?
+The gamesRouter is responsible for providing the restful routes for any requests and responses then using these to communicate with the database.
+
+
 4. What process does the the client (front-end) use to communicate with the server?
+The client submits a form which posts to the CREATE route.
+
 5. Which of the games API routes does the front-end application consume (i.e. make requests to)?
+It makes requests to the '/api/games'
 
 ## Extensions
 
 1. What are we using the [MongoDB Driver](http://mongodb.github.io/node-mongodb-native/) for?
+
 2. Why do we need to use [`ObjectId`](https://mongodb.github.io/node-mongodb-native/api-bson-generated/objectid.html) from the MongoDB driver?
