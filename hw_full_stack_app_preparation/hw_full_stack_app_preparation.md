@@ -45,3 +45,4 @@ Create and Delete
 1. What are we using the [MongoDB Driver](http://mongodb.github.io/node-mongodb-native/) for?
 
 2. Why do we need to use [`ObjectId`](https://mongodb.github.io/node-mongodb-native/api-bson-generated/objectid.html) from the MongoDB driver?
+ObjectId is a unique identifier and is used to identify objects so they can be deleted, updated etc.
