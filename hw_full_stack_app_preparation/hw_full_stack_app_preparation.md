@@ -24,10 +24,10 @@ Draw a diagram showing the dataflow through the application starting with a form
 ### Questions
 
 1. What is responsible for defining the routes of the `games` resource?
-
+The request.js defines the routes for the games resource.
 
 2. What are the the responsibilities of server.js?
-The server.js is responsible for loading static files onto the browser and directing responses and requests using any router. In this case the gamesRouter.
+The server.js is responsible for loading static files onto the browser and directing responses and requests using any router. In this case the gamesRouter. It also is the connection between the client and the database. It also parses the JSON.
 
 
 3. What are the responsibilities of the `gamesRouter`?
@@ -35,10 +35,10 @@ The gamesRouter is responsible for providing the restful routes for any requests
 
 
 4. What process does the the client (front-end) use to communicate with the server?
-The client submits a form which posts to the CREATE route.
+The client submits a form which posts a request to the CREATE route. It also receives responses/data via the index, show routes. These are both done using "Xmlhttprequests" although the information is actually sent in JSON and not XML.
 
 5. Which of the games API routes does the front-end application consume (i.e. make requests to)?
-It makes requests to the '/api/games'
+It makes requests to the '/api/games'.
 
 ## Extensions
 
