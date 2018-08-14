@@ -38,7 +38,7 @@ The gamesRouter is responsible for providing the restful routes for any requests
 The client submits a form which posts a request to the CREATE route. It also receives responses/data via the index, show routes. These are both done using "Xmlhttprequests" although the information is actually sent in JSON and not XML.
 
 5. Which of the games API routes does the front-end application consume (i.e. make requests to)?
-It makes requests to the '/api/games'.
+Create and Delete
 
 ## Extensions
 
